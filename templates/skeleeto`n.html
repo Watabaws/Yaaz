@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> {{ tl }} </title>
+    </head>
+
+
+    <body>
+<center>
+        <table>
+                {% for i in d %}
+                <tr>
+                    <td> {{ i }} </td> 
+                    <td> {{ d[i] }} </td>
+                </tr>
+                {% endfor %}
+        </table>
+<br>
+
+<h1>{{r}}</h1>
+</center>
+
+    </body>
+</html>
