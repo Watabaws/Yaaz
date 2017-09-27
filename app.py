@@ -35,7 +35,7 @@ def random_occupation():
 
 @app.route("/occupations")
 def occuWorked():
-    return render_template("skeleeto`n.html", tl = "Work 05", d = formattedOccs(), r = random_occupation())
+    return render_template("skeleeto`n.html", tl = "Occupations", heading = "Future Occupation Options", d = formattedOccs(), r = random_occupation())
 
 
 
