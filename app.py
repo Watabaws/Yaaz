@@ -1,3 +1,10 @@
+'''
+Adam Abbas & Yuyang Zhang 
+SoftDev1 pd07
+HW5 -- Jinja Tuning
+2017-09-27
+'''
+
 import random
 from collections import defaultdict
 from flask import Flask, render_template
