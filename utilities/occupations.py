@@ -13,7 +13,7 @@ cool_list = cool_file.readlines() #Read the file in a way that each line is a li
 cool_file.close()
 #print coolList
 
-def formattedOccs():
+def formatted_occs():
     cool_dic = {} #Close up the file
     i = 1 #this is going to be the index of our list!!
     cool_list = cool_list[:len(cool_list)-1]
@@ -42,7 +42,7 @@ def random_occupation():
 
 #below we are testing the accuracy of using cumulative frequency. we are running 10000 test trials to see if each occupation shows up the percentage that it is supposed to. as you can tell, it is pretty close every single time.
         
-def proveit():
+def prove_it():
     stuff = {} #This is going to be our occupation/amount returned 
     ctr = 0 #Start up our loop
     for i in cool_dic: #go through our dictionary of occupations, 
@@ -56,4 +56,6 @@ def proveit():
 
 
 
-proveit()
+prove_it()
+
+

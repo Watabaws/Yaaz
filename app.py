@@ -13,7 +13,7 @@ app = Flask(__name__)
 
 
 
-def formattedOccs():
+def formatted_occs():
     fyle = open("data/occupations.csv", "r") #Open up our csv file so we can get to working on it
     lest = fyle.readlines() #Read the file in a way that each line is a list item
     fyle.close()
@@ -29,7 +29,7 @@ def formattedOccs():
     return dicsha
 
 def random_occupation():
-    dicsha = formattedOccs()
+    dicsha = formatted_occs()
     c = 0 #counter for while loop
     random_float = random.uniform(0.0, 99.8) #float within range
     #print random_float
@@ -41,12 +41,12 @@ def random_occupation():
         c += 1
 
 @app.route("/")
-def fillerpage(): #used as home page
+def filler_page(): #used as home page
     return "<br><br><center><h1><a href='/occupations'> Click here for the good stuff </a> </h1></center>"
 
 @app.route("/occupations")
-def occuWorked():
-    return render_template("skeleeto`n.html", tl = "Occupations", heading = "Future Occupation Options", d = formattedOccs(), r = random_occupation()) #define variables
+def occu_worked():
+    return render_template("skeleeto`n.html", tl = "Occupations", heading = "Future Occupation Options", d = formatted_occs(), r = random_occupation()) #define variables
 
 
 
