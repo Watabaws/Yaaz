@@ -34,16 +34,16 @@ def random_occupation():
         c += 1
 
 @app.route("/")
-def fillerpage():
+def fillerpage(): #used as home page
     return "<br><br><center><h1><a href='/occupations'> Click here for the good stuff </a> </h1></center>"
 
 @app.route("/occupations")
 def occuWorked():
-    return render_template("skeleeto`n.html", tl = "Occupations", heading = "Future Occupation Options", d = formattedOccs(), r = random_occupation())
+    return render_template("skeleeto`n.html", tl = "Occupations", heading = "Future Occupation Options", d = formattedOccs(), r = random_occupation()) #define variables
 
 
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": #keeps code running after changes
     app.debug = True
     app.run()
